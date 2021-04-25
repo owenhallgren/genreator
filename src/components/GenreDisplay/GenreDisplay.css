@@ -1,0 +1,15 @@
+.genre-container {
+  /* height: 30%; */
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 50;
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+}
