@@ -1,0 +1,105 @@
+.modal {
+  font-size: 1.5em;
+}
+
+.accept-button {
+  border-radius: 5px;
+  height: 75%;
+  border: 1px solid #000804;
+  cursor: pointer;
+  background-color: #000804;
+  color: orange;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.accept-button:hover {
+  transform: scale(1.1);
+}
+
+.modal>.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal>.content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal>.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -8px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+  outline: none;
+  text-align: center;
+}
+
+.popup-overlay {
+  background-color: rgba(117, 120, 123, 0.7);
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+.popup-content {
+  position: relative;
+  margin: auto;
+  pointer-events: auto;
+  background: #fff;
+  width: 75%;
+  padding: 5px;
+  border: 5px solid #000804;
+  border-radius: 5px;
+}
+
+.review-button {
+  height: 3em;
+  width: 7em;
+  border-radius: 6px;
+  border: 1px solid #000804;
+  background-color: #000804;
+  color: orange;
+}
+
+.review-button:hover {
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+@media only screen and (min-width: 700px) {
+  .popup-content {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .popup-content {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .popup-content {
+    width: 40%;
+  }
+}
