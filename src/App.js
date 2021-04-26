@@ -12,7 +12,8 @@ class App extends Component {
     super();
     this.state = {
         randomGenre: '',
-        favoriteGenres: []
+        favoriteGenres: [],
+        error: ''
     }
   }
 
@@ -20,6 +21,7 @@ class App extends Component {
     fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/')
     .then(res => res.json())
     .then(data => this.setState({ randomGenre: data}))
+    .catch((err) => this.setErrorMessage())
   }
 
   addToFavorites = () => {
@@ -30,22 +32,29 @@ class App extends Component {
     this.returnGenre()
   }
 
+  setErrorMessage = () => {
+    this.setState({error: 'An error has occured. Please try again later.'})
+  }
+
   render() {
     return (
       <div className="home-page">
-      <Nav />
-      <Route exact path='/' render={() => 
-      <>
-          <div className="title-container">
-          <h1 className='title'>Genreator</h1>
-        </div>
-        <div className="random-container">
-          <button onClick={this.returnGenre}>Random Genre</button>
-        </div>
-        <div className="card-container">
-          <GenreDisplay addToFavorites={this.addToFavorites} genre={this.state.randomGenre}/>
-        </div>
-        </>
+      {this.state.error && 
+      <p>{this.state.error}</p>
+      }
+        <Nav />
+        <Route exact path='/' render={() => 
+          <>
+            <div className="title-container">
+            <h1 className='title'>Genreator</h1>
+            </div>
+            <div className="random-container">
+              <button onClick={this.returnGenre}>Random Genre</button>
+            </div>
+            <div className="card-container">
+              <GenreDisplay addToFavorites={this.addToFavorites} genre={this.state.randomGenre}/>
+            </div>
+         </>
         }/>
 
         <Route exact path='/favorites' render={() => 

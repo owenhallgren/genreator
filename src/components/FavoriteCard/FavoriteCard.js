@@ -5,7 +5,7 @@ const FavoriteCard = ({genre}) => {
     <>
       <div className="favorited-card">
         {genre}
-        <button>Delete</button>
+        {/* <button>Delete</button> */}
       </div>
     </>
   )
