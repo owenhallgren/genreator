@@ -6,7 +6,16 @@ const Favorites = ({state}) => {
     return <FavoriteCard genre={genre}/>
   })
   return(
-    <div>{favoritesToDisplay}</div>
+    <>
+    {!state.favoriteGenres.length && 
+    <div>
+      Favorite a genre to display here!
+    </div>}
+    { 
+      <div>{favoritesToDisplay}</div>
+    }
+    
+    </>
   )
 }
 

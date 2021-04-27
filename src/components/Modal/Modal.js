@@ -18,7 +18,7 @@ const Modal = ({addToFavorites}) => {
           Random generated story for genre   
         </div>
         <div className="actions">
-          <button onClick={addToFavorites}className='review-button'> 
+          <button onClick={() => {addToFavorites(); close()}}className='review-button'> 
           Add To Favorite 
           </button>
         </div>
