@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Genreator - An app for uninspired musicians 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A [Front-End Project](https://frontend.turing.io/projects/module-3/stretch.html) by [Owen Hallgren](https://github.com/owenhallgren)
 
-## Available Scripts
+## Overview
+_Genreator_ is a project meant for any muscician, on the verge of greatness, but lacks the creative mind to stand out. With this app a user can generate a random, never before seen, music genre. The user can favorite genres they enjoy the most. 
 
-In the project directory, you can run:
+## Installation Instructions
+1. `Clone down this repo and cd into the directory`
+2. `$ npm i`
+3. `$ npm start`
 
-### `npm start`
+If you see Compiled successfully! in your terminal, the application is running and the app can be viewed at http://localhost:3000/ in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Learning Goals
+* Learn about backend
+* Solidify React skills
+* Solidify router skills
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![react router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![node.js](	https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-### `npm run eject`
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img alt="Cypress" src='https://img.shields.io/badge/cypress%20-%23404d59.svg?&style=for-the-badge&logo=Cypress&logoColor=white'/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Features
 
-## Learn More
+### Application Demo
+![app demo](https://i.gyazo.com/566584f0ce473f66542a6d4f4b2da9c9.gif)
+### Home Page
+![home page demo](https://gyazo.com/018d19acf0c685e7f5d7a3b000c555bd.png)
+### Filtering Requests
+![filtering demo](https://i.gyazo.com/da00a9a3b8aba219d0081a56d7c25dd0.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Mobile View
+![mobile view demo](https://gyazo.com/4cc2d1b18b4c6bc1324ed298cd9c9c6a.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+##  Challenges
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Utilizing a postgreSQL database for the first time
+- Leveraging Knex libraries and the intricate configurations involved
+- Brief timeline to learn, and implement, new technologies
+- All team members having to attend medical or COVID vaccine appointments
 
-### Analyzing the Bundle Size
+## Wins
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Implementing multiple new technologies in a brief period
+- Adding a feature to send email notifications when the status of a review changes
+- Surpassing the MVP
 
-### Making a Progressive Web App
+## Future Iterations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Integrate login page with credential checking
+- Gamify app to make users more likely to review other's requests
+- Refactor application to use React hooks
