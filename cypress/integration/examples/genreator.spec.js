@@ -1,5 +1,5 @@
 describe('Initial Page', () => {
-  beforeEach(() => {
+  // beforeEach(() => {
     // cy.intercept('https://binaryjazz.us/wp-json/genrenator/v1/genre', {fixture: 'random-genre.json'})
     // cy.fixture('random-genre.json').then((randomGenre) => {
     //         cy.intercept('https://binaryjazz.us/wp-json/genrenator/v1/genre', randomGenre);
@@ -12,10 +12,41 @@ describe('Initial Page', () => {
     //         body: randomGenre
     //     })
     // })
+    // cy.visit('http://localhost:3000/')
+  // })
+   beforeEach(() => {
+     cy.intercept('GET', 'https://binaryjazz.us/wp-json/genrenator/v1/genre', {
+  body: 'coverpunkia',
+})
+    //  cy.intercept('https://binaryjazz.us/wp-json/genrenator/v1/genre/', "coverpunkia")
+    // cy.intercept('https://binaryjazz.us/wp-json/genrenator/v1/genre/', (req) => {
+    // req.send("coverpunkia")
+    //   })
+    
+//     cy.intercept('https://binaryjazz.us/wp-json/genrenator/v1/genre', (req) => {
+//   req.continue((res) => {
+//     res.send('coverpunkia')
+//   })
+// })
+  //   cy.intercept('GET', 'https://binaryjazz.us/wp-json/genrenator/v1/genre/', {
+  // statusCode: 200,
+  // body: "coverpunkia",
+// })
+    //  cy.intercept({
+    //     method: 'get',
+    //     url: 'https://binaryjazz.us/wp-json/genrenator/v1/genre'
+    //   },
+    //   {
+    //     statusCode: 200,
+    //     body: 'coverpunkia'        
+    //   })
+    
+      
     cy.visit('http://localhost:3000/')
   })
 
   it('As a user, when I navigate to the home page, I should see the basic layout', () => {
+    
     // cy.get('.title-container')
     // .contains('Genreator')
     cy.get('.card')
