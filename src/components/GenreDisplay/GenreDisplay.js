@@ -6,7 +6,7 @@ const GenreDisplay = ({addToFavorites, genre}) => {
   return (
     <div className=".genre-container">
       <div className='card'>
-        {genre}
+        <p className="genre-text">🎵{genre}🎵</p>
         <Modal addToFavorites={addToFavorites}/>
       </div>
     </div>

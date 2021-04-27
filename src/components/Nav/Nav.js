@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import './Nav.css'
 
 const Nav = () => {
   return (
@@ -7,7 +8,7 @@ const Nav = () => {
       <Route exact path='/' render={() => 
             <>
               <Link to={'/favorites'} className="link">
-                  <button className='logo-button'>Favorites</button>
+                  <button className='nav-button'>Favorites</button>
               </Link>
               {/* <Link to={'/new'} className="link">
               <button className='logo-button' id='addReq'><img className='icon' src={addReq} alt='new request'></img>t</button>
@@ -17,7 +18,7 @@ const Nav = () => {
           <Route exact path='/favorites' render={() => 
             <>
               <Link to={'/'} className="link">
-                  <button className='logo-button' id='dashBoard'>Home</button>
+                  <button className='nav-button' id='dashBoard'>Home</button>
               </Link>
               {/* <Link to={'/new'} className="link">
                   <button className='logo-button' id='addReq'><img className='icon' src={addReq} alt='new request'></img></button>

@@ -25,7 +25,9 @@ class App extends Component {
   }
 
   addToFavorites = () => {
-    this.setState({ favoriteGenres: [this.state.randomGenre, ...this.state.favoriteGenres]})
+    if(!this.state.favoriteGenres.includes(this.state.randomGenre)){
+      this.setState({ favoriteGenres: [this.state.randomGenre, ...this.state.favoriteGenres]})
+    }
   }
 
   componentDidMount = () => {
@@ -48,9 +50,9 @@ class App extends Component {
             <div className="title-container">
             <h1 className='title'>Genreator</h1>
             </div>
-            <div className="random-container">
-              <button onClick={this.returnGenre}>Random Genre</button>
-            </div>
+            {/* <div className="random-container"> */}
+              <button className="random-button" onClick={this.returnGenre}>Random Genre</button>
+            {/* </div> */}
             <div className="card-container">
               <GenreDisplay addToFavorites={this.addToFavorites} genre={this.state.randomGenre}/>
             </div>

@@ -5,7 +5,7 @@ import './Modal.css'
 const Modal = ({addToFavorites}) => { 
   return (
     <Popup
-    trigger={<button className="more-button"> More </button>}
+    trigger={<button className="favorite-button"> Favorite </button>}
     modal
     nested
     >
@@ -14,11 +14,11 @@ const Modal = ({addToFavorites}) => {
         <button className="close" onClick={close}>
           &times;
         </button>
-        <div className="content">
-          Random generated story for genre   
-        </div>
+        <p className="content">
+          Add Genre to Favorites?   
+        </p>
         <div className="actions">
-          <button onClick={() => {addToFavorites(); close()}}className='review-button'> 
+          <button onClick={() => {addToFavorites(); close()}}className='add-favorite-button'> 
           Add To Favorite 
           </button>
         </div>

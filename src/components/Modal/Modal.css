@@ -1,19 +1,24 @@
 .modal {
+  display: flex;
   font-size: 1.5em;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
-.accept-button {
+.favorite-button {
   border-radius: 5px;
-  height: 75%;
+  height: 10vh;
   border: 1px solid #000804;
   cursor: pointer;
-  background-color: #000804;
-  color: orange;
+  background-color: #A6492E;
+  color: black;
   outline: none;
   font-family: 'Roboto', sans-serif;
 }
 
-.accept-button:hover {
+.favorite-button:hover {
   transform: scale(1.1);
 }
 
@@ -23,11 +28,6 @@
   font-size: 18px;
   text-align: center;
   padding: 5px;
-}
-
-.modal>.content {
-  width: 100%;
-  padding: 10px 5px;
 }
 
 .modal>.actions {
@@ -66,40 +66,22 @@
   margin: auto;
   pointer-events: auto;
   background: #fff;
-  width: 75%;
+  width: 20%;
   padding: 5px;
-  border: 5px solid #000804;
+  border: 5px solid #70DBC6;
   border-radius: 5px;
 }
 
-.review-button {
+.add-favorite-button {
   height: 3em;
   width: 7em;
   border-radius: 6px;
   border: 1px solid #000804;
-  background-color: #000804;
-  color: orange;
+  background-color: #A6492E;
+  color: black;
 }
 
-.review-button:hover {
+.add-favorite-button:hover {
   cursor: pointer;
   transform: scale(1.1)
-}
-
-@media only screen and (min-width: 700px) {
-  .popup-content {
-    width: 60%;
-  }
-}
-
-@media only screen and (min-width: 950px) {
-  .popup-content {
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .popup-content {
-    width: 40%;
-  }
 }
