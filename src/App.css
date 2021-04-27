@@ -1,9 +1,12 @@
-/* .App {
-  text-align: center;
-  /* align-items: center; *;
-} */
+* {
+  color: #000804;
+  font-family: 'Antonio',
+  sans-serif;
+}
+
 body {
   height: 100%;
+  background-color: #f58973;
 }
 
 .home-page {
@@ -15,19 +18,29 @@ height: 100%;
 justify-items: space-between;
 }
 
-.random-container {
-  margin-top: 100px;
-}
+.random-button {
+  width: 10vw;
+  height: 10vh;
+  background-color: #70DBC6;
+  color: black;
+  font-size: 1.6vw;
+  border-radius: 8px;
+  }
+
+  .random-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 
 .title { 
-  font-size: 100px;
+  font-size: 7vw;
   /* align-self: center; */
    /* height: 200px;
    width:300px; */
-   background: red;
+   background: #f58973;
 }
 
 .card-container {
-  margin-top: 100px;
+  margin-top: 8vh;
   height: 10%;
 }
