@@ -19,7 +19,7 @@ const Modal = ({addToFavorites}) => {
         </p>
         <div className="actions">
           <button onClick={() => {addToFavorites(); close()}}className='add-favorite-button'> 
-          Add To Favorite 
+          Add To Favorites
           </button>
         </div>
       </div>
