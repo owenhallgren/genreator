@@ -1,6 +1,7 @@
 import React from 'react';
 import './GenreDisplay.css'
 import Modal from '../Modal/Modal'
+import PropTypes from 'prop-types'
 
 const GenreDisplay = ({addToFavorites, genre}) => {
   return (
@@ -12,5 +13,10 @@ const GenreDisplay = ({addToFavorites, genre}) => {
     </div>
   )
 }
+
+GenreDisplay.propTypes = {
+  addToFavorites: PropTypes.func,
+  genre: PropTypes.string
+};
 
 export default GenreDisplay;

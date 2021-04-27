@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import './Nav.css'
+import PropTypes from 'prop-types'
 
 const Nav = ({error}) => {
   return (
@@ -26,5 +27,9 @@ const Nav = ({error}) => {
     
   )
 }
+
+Nav.propTypes = {
+  error: PropTypes.string
+};
 
 export default Nav;
