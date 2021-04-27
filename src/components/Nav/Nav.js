@@ -9,26 +9,20 @@ const Nav = ({error}) => {
         <p>{error}</p>
       }
       <Route exact path='/' render={() => 
-            <>
-              <Link to={'/favorites'} className="link">
-                  {!error && <button className='nav-button'>Favorites</button>}
-              </Link>
-              {/* <Link to={'/new'} className="link">
-              <button className='logo-button' id='addReq'><img className='icon' src={addReq} alt='new request'></img>t</button>
-              </Link> */}
-            </>
+          <>
+            <Link to={'/favorites'} className="link">
+                {!error && <button className='nav-button'>Favorites</button>}
+            </Link>
+          </>
           }/>
           <Route exact path='/favorites' render={() => 
             <>
               <Link to={'/'} className="link">
-                  <button className='nav-button' id='dashBoard'>Home</button>
+                <button className='nav-button' id='dashBoard'>Home</button>
               </Link>
-              {/* <Link to={'/new'} className="link">
-                  <button className='logo-button' id='addReq'><img className='icon' src={addReq} alt='new request'></img></button>
-              </Link> */}
             </>
           }/>
-    </nav>
+      </nav>
     
   )
 }

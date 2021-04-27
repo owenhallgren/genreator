@@ -16,7 +16,7 @@ nav {
   border-radius: 8px;
 }
 
-.nav-button:hover{
+.nav-button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
