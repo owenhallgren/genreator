@@ -1,6 +1,7 @@
 import React from 'react'
 import Popup from 'reactjs-popup'
 import './Modal.css'
+import PropTypes from 'prop-types'
 
 const Modal = ({addToFavorites}) => { 
   return (
@@ -27,5 +28,9 @@ const Modal = ({addToFavorites}) => {
   </Popup>
   );
 }
+
+Modal.propTypes = {
+  addToFavorites: PropTypes.func
+};
 
 export default Modal
