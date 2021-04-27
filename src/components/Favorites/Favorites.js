@@ -1,6 +1,7 @@
 import React from 'react';
 import FavoriteCard from '../FavoriteCard/FavoriteCard.js'
 import './Favorites.css'
+import PropTypes from 'prop-types'
 
 const Favorites = ({state}) => {
   let favoritesToDisplay = state.favoriteGenres.map(genre => {
@@ -18,5 +19,9 @@ const Favorites = ({state}) => {
     </>
   )
 }
+
+Favorites.propTypes = {
+  state: PropTypes.any.isRequired
+};
 
 export default Favorites;
