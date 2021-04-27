@@ -14,7 +14,7 @@ If you see Compiled successfully! in your terminal, the application is running a
 
 
 ## Learning Goals
-* Learn about backend
+* Solidify Cypress skills
 * Solidify React skills
 * Solidify router skills
 
@@ -33,38 +33,11 @@ If you see Compiled successfully! in your terminal, the application is running a
 
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-![postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
 <img alt="Cypress" src='https://img.shields.io/badge/cypress%20-%23404d59.svg?&style=for-the-badge&logo=Cypress&logoColor=white'/>
 
-## Features
-
 ### Application Demo
-![app demo](https://i.gyazo.com/566584f0ce473f66542a6d4f4b2da9c9.gif)
-### Home Page
-![home page demo](https://gyazo.com/018d19acf0c685e7f5d7a3b000c555bd.png)
-### Filtering Requests
-![filtering demo](https://i.gyazo.com/da00a9a3b8aba219d0081a56d7c25dd0.gif)
-
-### Mobile View
-![mobile view demo](https://gyazo.com/4cc2d1b18b4c6bc1324ed298cd9c9c6a.png)
-
-
-##  Challenges
-
-- Utilizing a postgreSQL database for the first time
-- Leveraging Knex libraries and the intricate configurations involved
-- Brief timeline to learn, and implement, new technologies
-- All team members having to attend medical or COVID vaccine appointments
-
-## Wins
-
-- Implementing multiple new technologies in a brief period
-- Adding a feature to send email notifications when the status of a review changes
-- Surpassing the MVP
-
+![app demo](https://media.giphy.com/media/NQQOUtqLk0Gqa8NVm4/giphy.gif)
 ## Future Iterations
 
-- Integrate login page with credential checking
-- Gamify app to make users more likely to review other's requests
-- Refactor application to use React hooks
+- Get cypress to work with intercepting
+- Add local storage to hold favorited genres
