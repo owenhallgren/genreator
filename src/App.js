@@ -5,8 +5,6 @@ import Favorites from './components/Favorites/Favorites.js'
 import Nav from './components/Nav/Nav.js'
 import { Route } from 'react-router-dom';
 
-
-
 class App extends Component { 
   constructor() {
     super();
@@ -41,33 +39,26 @@ class App extends Component {
   render() {
     return (
       <div className="home-page">
-      
         <Nav error={this.state.error}/>
         <Route exact path='/' render={() => 
           <>
             <div className="title-container">
             <h1 className='title'>Genreator</h1>
             </div>
-            {/* <div className="random-container"> */}
-              <button className="random-button" onClick={this.returnGenre}>Random Genre</button>
-            {/* </div> */}
+              <button className="random-button" onClick={this.returnGenre}>Random Genre</button>            
             <div className="card-container">
               <GenreDisplay addToFavorites={this.addToFavorites} genre={this.state.randomGenre}/>
             </div>
          </>
         }/>
-
         <Route exact path='/favorites' render={() => 
-        <div className="favorites-container">
-          <Favorites state={this.state} />
-        </div>  
-        }/>
-        
-              
+          <div className="favorites-container">
+            <Favorites state={this.state} />
+          </div>  
+        }/>   
       </div>
     )
   }
 }
-
 
 export default App;

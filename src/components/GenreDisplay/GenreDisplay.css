@@ -1,20 +1,8 @@
-/* .genre-container {
-  height: 30%;
-  width: 100%;
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; */
-/* } */
-
 .card {
   display: flex;
-  /* margin-top: 50; */
-  /* border: solid 1px #70DBC6; */
   width: 60vw;
   height: 22vh;
   align-items: center;
-  /* justify-content: space-between; */
   flex-direction: column;
 }
 
