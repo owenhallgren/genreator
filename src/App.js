@@ -41,10 +41,8 @@ class App extends Component {
   render() {
     return (
       <div className="home-page">
-      {this.state.error && 
-      <p>{this.state.error}</p>
-      }
-        <Nav />
+      
+        <Nav error={this.state.error}/>
         <Route exact path='/' render={() => 
           <>
             <div className="title-container">

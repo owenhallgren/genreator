@@ -2,13 +2,16 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import './Nav.css'
 
-const Nav = () => {
+const Nav = ({error}) => {
   return (
     <nav>
+      {error && 
+        <p>{error}</p>
+      }
       <Route exact path='/' render={() => 
             <>
               <Link to={'/favorites'} className="link">
-                  <button className='nav-button'>Favorites</button>
+                  {!error && <button className='nav-button'>Favorites</button>}
               </Link>
               {/* <Link to={'/new'} className="link">
               <button className='logo-button' id='addReq'><img className='icon' src={addReq} alt='new request'></img>t</button>
