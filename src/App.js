@@ -3,7 +3,7 @@ import './App.css';
 import GenreDisplay from './components/GenreDisplay/GenreDisplay.js'
 import Favorites from './components/Favorites/Favorites.js'
 import Nav from './components/Nav/Nav.js'
-import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom'
 
 class App extends Component { 
   constructor() {
