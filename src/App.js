@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
         randomGenre: '',
         favoriteGenres: [],
-        error: ''
+        error: '',
     }
   }
 
